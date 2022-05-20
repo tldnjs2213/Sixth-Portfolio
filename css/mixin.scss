@@ -1,0 +1,31 @@
+@mixin flexRow() {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexCol() {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin desktop {
+	@media (min-width: $desktopMinSize) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: $tabletMinSize) and (max-width: $desktopMinSize) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (min-width: $mobileMinSize) and (max-width: $tabletMinSize) {
+		@content;
+	}
+}

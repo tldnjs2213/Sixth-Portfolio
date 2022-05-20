@@ -1,0 +1,1879 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gaegu', cursive;
+  text-align: center;
+  list-style: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mainBgPattern.jpg);
+  }
+  main.mainContainer section.sectionLogoContainer {
+    width: 100%;
+    height: 10%;
+    background-image: url(../images/krispyLogo00.png);
+    background-repeat: no-repeat;
+    background-size: 12vw;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer {
+    width: 100%;
+    height: 83%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer {
+    width: 30%;
+    height: 70%;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer h2.h2OrderListTitle {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e8f4df;
+    font-size: 1.4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer {
+    width: 100%;
+    height: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li {
+    width: 100%;
+    height: 2vw;
+    margin: 1% 0;
+    padding: 0 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListTitle {
+    width: 50%;
+    font-size: 1.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iMinusIcon {
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer span.spanOrderListQuantity {
+    width: 40%;
+    font-size: 1.4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iPlusIcon {
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice {
+    width: 22%;
+    font-size: 1.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li i.iCloseIcon {
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-track {
+    background-color: #e8f4df;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer {
+    width: 70%;
+    height: 70%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer {
+    width: 18%;
+    height: 15vw;
+    margin: 1.2% 1%;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1.2vw;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductImageContainer {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5vw 0;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer h2 {
+    line-height: 2vw;
+    font-size: 1.5vw;
+    word-break: keep-all;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span {
+    font-size: 1.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-track {
+    background-color: #e8f4df;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer {
+    width: 30%;
+    height: 30%;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 0.1vw solid #00704a;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer {
+    width: 100%;
+    height: 50%;
+    padding-bottom: calc(20% / 8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li {
+    width: 40%;
+    height: 4vw;
+    margin: calc(20% / 8);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 0.7vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li h3 {
+    margin-bottom: 0.3vw;
+    font-size: 1.4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span {
+    font-size: 1.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li.liOrderQuantityContainer span.spanOrderQuantity::after {
+    content: '개';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer {
+    width: 100%;
+    height: 50%;
+    padding: 0 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle {
+    width: 60%;
+    height: 3vw;
+    margin-right: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle input.inputMoneyReceived {
+    width: 55%;
+    height: 80%;
+    margin-left: 1vw;
+    padding-right: 1vw;
+    border: 0.1vw solid #0a0a0a;
+    text-align: right;
+    font-size: 1.3vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer button.buttonCashRegister {
+    width: 35%;
+    height: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 1.2vw;
+    background-color: #e8f4df;
+    font-size: 1.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer {
+    width: 70%;
+    height: 30%;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer {
+    width: 80%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 4vw;
+    color: #0a0a0a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li {
+    width: 20%;
+    height: 4vw;
+    margin: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.7vw;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment {
+    margin-bottom: 0.5vw;
+    font-size: 1.6vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPaymentQuantity {
+    font-size: 1.3vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer {
+    width: 20%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister {
+    width: 10vw;
+    height: 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 0.7vw;
+    font-size: 1.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister {
+    margin-top: 1vw;
+    font-size: 1.8vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister::after,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button:last-child {
+    height: 3vw;
+    background-color: #e8f4df;
+  }
+  main.mainContainer section.sectionPortfolio {
+    width: 100%;
+    height: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #00704a;
+    color: #fff;
+    font-size: 1.5vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mainBgPattern.jpg);
+  }
+  main.mainContainer section.sectionLogoContainer {
+    width: 100%;
+    height: 10%;
+    background-image: url(../images/krispyLogo00.png);
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer {
+    width: 100%;
+    height: 83%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer {
+    width: 100%;
+    height: 20%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer h2.h2OrderListTitle {
+    width: 100%;
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e8f4df;
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer {
+    width: 100%;
+    height: 75%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li {
+    width: 100%;
+    height: 3vw;
+    margin: 1% 0;
+    padding: 0 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListTitle {
+    width: 50%;
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iMinusIcon {
+    font-size: 2vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer span.spanOrderListQuantity {
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iPlusIcon {
+    font-size: 2vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice {
+    font-size: 2.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li i.iCloseIcon {
+    font-size: 2.5vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-track {
+    background-color: #e8f4df;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer {
+    width: 100%;
+    height: 40%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1.25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer {
+    width: calc(90% / 4);
+    height: 25vw;
+    margin: 1.25%;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1.2vw;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductImageContainer {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5vw 0;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer h2 {
+    line-height: 3vw;
+    font-size: 2.5vw;
+    word-break: keep-all;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span {
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-track {
+    background-color: subColor2;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer {
+    width: 100%;
+    height: 20%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer {
+    width: 100%;
+    height: 50%;
+    padding-bottom: calc(20% / 8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li {
+    width: 30%;
+    height: 4vw;
+    margin: calc(20% / 8);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.7vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li h3 {
+    margin-bottom: 0.3vw;
+    margin-right: 2vw;
+    font-size: 3vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span {
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li.liOrderQuantityContainer span.spanOrderQuantity::after {
+    content: '개';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer {
+    width: 100%;
+    height: 50%;
+    padding-left: 1vw;
+    padding-right: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle {
+    width: 50%;
+    height: 3vw;
+    margin-right: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2.4vw;
+    font-weight: bold;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle input.inputMoneyReceived {
+    width: 40%;
+    height: 80%;
+    margin-left: 1vw;
+    padding-right: 1vw;
+    border: 0.1vw solid #0a0a0a;
+    text-align: right;
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer button.buttonCashRegister {
+    width: 18%;
+    height: 4vw;
+    padding: 0 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 1.2vw;
+    background-color: #e8f4df;
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer {
+    width: 100%;
+    height: 20%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer {
+    width: 80%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 4vw;
+    color: #0a0a0a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li {
+    width: 22%;
+    height: 6vw;
+    margin: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.7vw;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment {
+    margin-bottom: 0.5vw;
+    font-size: 2.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPaymentQuantity {
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer {
+    width: 20%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister {
+    width: 82%;
+    height: 8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 0.7vw;
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister {
+    margin-top: 1vw;
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister::after,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button:last-child {
+    height: 5vw;
+    background-color: #e8f4df;
+  }
+  main.mainContainer section.sectionPortfolio {
+    width: 100%;
+    height: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #00704a;
+    color: #fff;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mainBgPattern.jpg);
+  }
+  main.mainContainer section.sectionLogoContainer {
+    width: 100%;
+    height: 8%;
+    background-image: url(../images/krispyLogo00.png);
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer {
+    width: 100%;
+    height: 87%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer {
+    width: 60%;
+    height: 30%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer h2.h2OrderListTitle {
+    width: 100%;
+    height: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e8f4df;
+    font-size: 4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer {
+    width: 100%;
+    height: 85%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li {
+    width: 100%;
+    height: 20%;
+    margin: 1% 0;
+    padding: 0 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListTitle {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3vw;
+    word-break: keep-all;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iMinusIcon {
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer span.spanOrderListQuantity {
+    width: 40%;
+    font-size: 1.4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li .divOrderListQuantityContainer i.iPlusIcon {
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice {
+    width: 22%;
+    font-size: 1.2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li span.spanOrderListPrice::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer li i.iCloseIcon {
+    width: 10%;
+    font-size: 1.3vw;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopLeftContainer nav.navOrderListContainer ul.ulOrderListContainer::-webkit-scrollbar-track {
+    background-color: #e8f4df;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer {
+    width: 100%;
+    height: 40%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer {
+    width: 100%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 0.3vw solid #00704a;
+    background-color: #fff;
+    overflow-x: auto;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer {
+    width: 80%;
+    height: 60vw;
+    margin: 0 10%;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1.2vw;
+    -webkit-box-shadow: 0.5vw 0.5vw 1vw 0.1vw #bbb;
+            box-shadow: 0.5vw 0.5vw 1vw 0.1vw #bbb;
+    cursor: pointer;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductImageContainer {
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5vw 0;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer h2 {
+    line-height: 2vw;
+    margin-bottom: 5vw;
+    font-size: 7vw;
+    word-break: keep-all;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span {
+    font-size: 5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer li.liProductContainer .divProductInformationContainer span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar {
+    height: 2vw;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-thumb {
+    background-color: #00704a;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterTopRightContainer nav.navProductContainer ul.ulProductContainer::-webkit-scrollbar-track {
+    background-color: #e8f4df;
+    border-radius: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer {
+    width: 40%;
+    height: 30%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer {
+    width: 100%;
+    height: 50%;
+    padding-bottom: calc(20% / 8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li {
+    width: 40%;
+    height: 12vw;
+    margin: calc(20% / 8);
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 0.7vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li h3 {
+    margin-bottom: 0.3vw;
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span {
+    font-size: 3vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li span::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer ul.ulCashRegisterResultContainer li.liOrderQuantityContainer span.spanOrderQuantity::after {
+    content: '개';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer {
+    width: 100%;
+    height: 50%;
+    padding: 0 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle {
+    width: 50%;
+    height: 12vw;
+    margin-right: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer label.labelMoneyReceivedTitle input.inputMoneyReceived {
+    width: 60%;
+    height: 40%;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    padding-right: 1vw;
+    border: 0.1vw solid #0a0a0a;
+    text-align: right;
+    font-size: 2vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomLeftContainer nav.navCashRegisterResultContainer .divMoneyReceivedContainer button.buttonCashRegister {
+    width: 50%;
+    height: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 1.2vw;
+    background-color: #e8f4df;
+    font-size: 3vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer {
+    width: 100%;
+    height: 30%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    border-top: 0.2vw solid #00704a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer {
+    width: 80%;
+    height: 100%;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 4vw;
+    color: #0a0a0a;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li {
+    width: 22%;
+    height: 17vw;
+    margin: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.7vw;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #bbb;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment {
+    margin-bottom: 0.5vw;
+    font-size: 4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPayment::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer nav.navPaymentContainer ul.ulPaymentContainer li span.spanPaymentQuantity {
+    font-size: 4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer {
+    width: 20%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister {
+    width: 80%;
+    height: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.1vw solid #0a0a0a;
+    border-radius: 0.7vw;
+    font-size: 4vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister {
+    margin-top: 1vw;
+    font-size: 2.5vw;
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button span.spanCashRegister::after,
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer .divCashRegister span.spanCashRegister::after {
+    content: '원';
+  }
+  main.mainContainer section.sectionCashRegisterContainer article.articleCashRegisterBottomRightContainer .divPaymentContainer .divButtonContainer button:last-child {
+    height: 10vw;
+    background-color: #e8f4df;
+  }
+  main.mainContainer section.sectionPortfolio {
+    width: 100%;
+    height: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #00704a;
+    color: #fff;
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */
